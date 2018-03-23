@@ -1,0 +1,22 @@
+﻿Para realizar a conversão dos números de uma base A para uma base B, primeiro convertemos esse número para o sistema decimal por meio da expressão denotada por: 
+
+bj = aj
+bj-1 = aj-1 + 2bj, 
+onde : 
+a = número recebido
+b = número convertido para a base 10
+j = posição do digito
+
+Em seguida convertemos o número na base decimal para a base destino por meio de divisões sucessivas. 
+
+1 passo: Primerio dividimos o numero recebido (ni onde i = 0) pela base 
+2 passo: Guardamos o resto da divisão em um array
+3 passo: O resultado da divisão (ni onde i = i + 1) então é dividido pela base
+4 passo: Guardamos o resto da divisão em um array
+Repetimos o passo 3 e 4 enquanto o resultado da divisão for maior que zero. 
+Caso contrário paramos. 
+Os restos das divisões que foram guardados em um array são invertidos e com isso temos o número convertido para a base destino. 
+
+Obs: O programa conta com um array de uma struct onde um elemento representa os símbolos do alfabeto para bases maiores que a 10 e o outro elemento digitos.
+
+Ex: A - 10, B - 11, por aí vai...   
