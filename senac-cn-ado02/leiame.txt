@@ -1,0 +1,11 @@
+﻿Objetivo: 
+
+Implementar solução computacional baseada na Série de Taylor para calcular os valores de seno e cosseno de um arco dado em radianos e os erros relativo e absoluto, tomando-se como base as funções sin(x) e cos(x) da biblioteca padrão(math.h) 
+
+
+
+Resolução 
+
+Para encontrar os valores para os seno(x) e os seus respectivos erros relativos e absolutos no intervalo de 0 a 4pi rad criamos um for que vai de 0 a 720 graus e para cada angulo é calculado o valor estimado para seno(x) utilizando a Série de Taylor, o erro absoluto do seno(x) dado pela fórmula: sin(x) - sen(x) e erro relativo dado pela fórmula: erro_absoluto/seno(x). Ao passo que todos esses valores são armazenados em um .dat. O mesmo processo é aplicado para os valores de cosseno(x). Definimos o número de interações n como sendo igual a 20 para gerar uma convergencia de valores satisfatória. Além disso, foram criadas as funções para calcular o fatorial e a potencia utilizadas na hora da implementação da Fórmula de Taylor. 
+
+No final temos 2 arquivos .dat de seno, cosseno e seus erros, e um 2 png com os graficos gerados.
