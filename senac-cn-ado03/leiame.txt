@@ -1,0 +1,4 @@
+﻿Nessa atividade foi implementado um algoritmo para prever o valor da constante de Euler por meio da expressão: (1-1/n)^n onde n varia de 10^0 a 10^20. Estimamos valores para o Euler utilizando três tipos de arredondamento: float, double e long double. 
+
+O arquivo lib.c contem as três funções responsáveis por calcular o valor do Euler de acordo com uma das aproximações. O arquivo euler.c cria os gráficos e executa a chamada das três funções presentes no lib.c 
+
