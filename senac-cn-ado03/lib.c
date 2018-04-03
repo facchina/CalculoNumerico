@@ -12,7 +12,7 @@ void eulerFloat(FILE *fp){
 }
 void eulerDouble(FILE *fp){
 	for(double n = 1; n <= 10e20; n *= 10){
-		double e = powf(1 + (1/n), n);
+		double e = pow(1 + (1/n), n);
 		fprintf(fp, "%lf %lf\n", n, e); 
 	}
 }
